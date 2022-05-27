@@ -14,7 +14,9 @@ def send():
 
 
 def get_token():
-    url = "https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&client_id=atZp8l994lMkGTroIKCQf2FV&client_secret=6HoLmd6NOHsukBU7ZbElt7YbeqOYk92Q"
+    client_id = ""
+    client_secret = ""
+    url = "https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&client_id="+client_id+"&client_secret="+client_secret
     r = requests.get(url)
     return r.json()['access_token']
 
